@@ -17,7 +17,7 @@ type Config struct {
 
 func configPath() string {
 	home, _ := os.UserHomeDir()
-	return filepath.Join(home, ".config", "harbor.yaml")
+	return filepath.Join(home, ".config", "anker.yaml")
 }
 
 func EnsureDefaultConfig() {

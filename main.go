@@ -1,8 +1,8 @@
 package main
 
 import (
+	"anker/registries"
 	"fmt"
-	"harbor/registries"
 	"os"
 )
 
