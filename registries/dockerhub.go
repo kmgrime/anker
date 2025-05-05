@@ -8,12 +8,6 @@ import (
 	"net/url"
 )
 
-type ImageResult struct {
-	Name        string
-	URL         string
-	Description string
-}
-
 type dockerHubResponse struct {
 	Count    int    `json:"count"`
 	Next     string `json:"next"`

@@ -5,6 +5,12 @@ type Registry struct {
 	Search func(query string) ([]ImageResult, error)
 }
 
+type ImageResult struct {
+	Name        string
+	URL         string
+	Description string
+}
+
 var All = []Registry{
 	{
 		Name:   "dockerhub",
@@ -15,3 +21,4 @@ var All = []Registry{
 		Search: SearchQuay,
 	},
 }
+
